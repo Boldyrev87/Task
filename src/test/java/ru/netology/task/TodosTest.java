@@ -141,4 +141,14 @@ public class TodosTest {
         Task[] actual = todos.search("Верификация");
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void test_6() {
+        Todos todos = new Todos();
+        todos.add(new SimpleTask(9, "Подписать договор"));
+        todos.add(new Epic(5, new String[]{"Отправить СМС"}));
+        Task[] expected = {new SimpleTask(9, "Подписать договор")};
+        Task[] actual = todos.search("договор");
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
