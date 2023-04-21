@@ -1,7 +1,9 @@
 package ru.netology.task;
 
 public class Meeting extends Task {
-    protected String topic, project, start;
+    protected String topic;
+    protected String project;
+    protected String start;
 
 
     public Meeting(int id, String topic, String project, String start) {
@@ -9,18 +11,6 @@ public class Meeting extends Task {
         this.topic = topic;
         this.project = project;
         this.start = start;
-    }
-
-    public String getTopic() {
-        return topic;
-    }
-
-    public String getProject() {
-        return project;
-    }
-
-    public String getStart() {
-        return start;
     }
 
     @Override
@@ -34,5 +24,3 @@ public class Meeting extends Task {
         return false;
     }
 }
-
-

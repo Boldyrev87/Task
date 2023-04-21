@@ -1,4 +1,5 @@
 package ru.netology.task;
+
 public class Todos {
     private Task[] tasks = new Task[0];
 
@@ -28,6 +29,4 @@ public class Todos {
         }
         return result;
     }
-
-
 }
